@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(0, 22, 50);
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 50px;
+
+  h1 {
+    color: rgb(128, 139, 154);
+  }
+
+  h2 {
+    color: white;
+  }
+
+  h6 {
+    background-color: rgb(207, 244, 252);
+    color: rgb(28, 104, 113);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    width: 800px;
+  }
+}
+
+main {
+  max-width: 800px !important;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+
+  table {
+    padding: 20px;
+
+    tbody,
+    td,
+    tr {
+      border-style: none;
+    }
+  }
+}
