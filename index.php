@@ -1,22 +1,12 @@
 <?php
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
-  <link rel="stylesheet" href="./data/style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHP Strong Password Generator</title>
-</head>
+
+<?php include_once __DIR__ . './partials/head.php';?>
+
 <body>
 
-  <header class="container text-center my-1">
-    <h1>Strong password generator</h1>
-    <h2>Genera una password sicura</h2>
-    <h6>Nessun parametro valido inserito</h6>
-  </header>
+  <?php include_once __DIR__ . './partials/header.php';?>
 
   <main class="container">
 
