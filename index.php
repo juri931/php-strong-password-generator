@@ -1,6 +1,11 @@
 <?php
 
+  $error = '';
+
 ?>
+
+<?php include_once __DIR__ . '../data/functions.php';?>
+
 
 <?php include_once __DIR__ . './partials/head.php';?>
 
@@ -14,7 +19,11 @@
       <tbody>
         <tr>
           <td>Lunghezza password:</td>
-          <td><input type="text"></td>
+          <td>
+            <form action="index.php" method="GET">
+              <input type="text" class="form-control" id="number" name="number">
+            </form>
+          </td>
         </tr>
         
         <tr>
@@ -44,7 +53,7 @@
 
         <tr>
           <td>
-            <button class="btn btn-primary">Invia</button>
+            <button type="submit" class="btn btn-primary">Invia</button>
             <button class="btn btn-secondary">Annulla</button>
           </td>
         </tr>

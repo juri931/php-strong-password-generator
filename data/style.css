@@ -41,5 +41,12 @@ main {
     tr {
       border-style: none;
     }
+
+    form {
+      input {
+        width: 100px;
+
+      }
+    }
   }
 }
