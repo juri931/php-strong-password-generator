@@ -19,9 +19,6 @@
     $password = str_replace('<', '&lt', $password);
     $password = str_replace('>', '&gt', $password);
 
-    session_start();
-    
-
     return $password;
   };
 
