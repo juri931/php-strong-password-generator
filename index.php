@@ -1,6 +1,12 @@
 <?php
 
-  $error = '';
+  session_start();
+
+  require_once __DIR__ . './functions.php';
+
+  if(isset($_POST['length'])){
+    $response = generatePass($_POST['length']);
+  };
 
 ?>
 
@@ -20,9 +26,9 @@
         <tr>
           <td>Lunghezza password:</td>
           <td>
-            <form action="index.php" method="GET">
-              <input type="text" class="form-control" id="number" name="number">
-            </form>
+            <form action="index.php" method="POST">
+              <input type="number" class="form-control" id="length" name="length">
+            
           </td>
         </tr>
         
@@ -58,6 +64,7 @@
           </td>
         </tr>
       </tbody>
+      </form>
     </table>
 
   </main>
